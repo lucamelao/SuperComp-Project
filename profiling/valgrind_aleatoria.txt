@@ -1,0 +1,337 @@
+==909881== Callgrind, a call-graph generating cache profiler
+==909881== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==909881== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==909881== Command: ./aleatoria
+==909881== 
+==909881== For interactive control, run 'callgrind_control -h'.
+
+AGENDA DE FILMES (4)
+-----------------------------------------------------------------------------------
+  HORAS |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+-----------------------------------------------------------------------------------
+  FILM 145 |###                                                                      | CAT:8
+  FILM 662 |                                                      #########          | CAT:8
+  FILM 721 |                                                               ###       | CAT:1
+  FILM 143 |                                                                  ###    | CAT:9
+-----------------------------------------------------------------------------------
+Filmes assistidos: 4
+Tempo de tela: 6 horas.
+Execution time: 54.974 ms.
+==909881== 
+==909881== Events    : Ir
+==909881== Collected : 6001047
+==909881== 
+==909881== I   refs:      6,001,047
+
+
+
+
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.909881' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 1164679
+Trigger: Program termination
+Profiled target:  ./aleatoria (PID 909881, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   aleatoria.cpp
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir        
+--------------------------------------------------------------------------------
+6,001,047  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir         file:function
+--------------------------------------------------------------------------------
+1,072,161  /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+  749,986  ???:std::istreambuf_iterator<char, std::char_traits<char> > std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::_M_extract_int<long>(std::istreambuf_iterator<char, std::char_traits<char> >, std::istreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, std::_Ios_Iostate&, long&) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+  576,809  /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:do_lookup_x [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+  502,192  /build/glibc-SzIz7B/glibc-2.31/libio/getc.c:getc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+  391,552  /build/glibc-SzIz7B/glibc-2.31/libio/genops.c:_IO_sputbackc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+  329,728  /build/glibc-SzIz7B/glibc-2.31/libio/ioungetc.c:ungetc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+  275,285  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+  253,008  ???:std::istream::sentry::sentry(std::istream&, bool) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+  185,472  ???:__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+  165,660  ???:std::istream::operator>>(int&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+  121,130  /build/glibc-SzIz7B/glibc-2.31/elf/dl-lookup.c:check_match [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+  117,507  ???:0x0000000000126e50 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+   96,640  /build/glibc-SzIz7B/glibc-2.31/libio/iofflush.c:fflush [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   90,661  /build/glibc-SzIz7B/glibc-2.31/elf/do-rel.h:_dl_relocate_object
+   85,818  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/strcmp.S:strcmp [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   71,545  /build/glibc-SzIz7B/glibc-2.31/elf/dl-addr.c:_dl_addr [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   67,188  ???:0x0000000000125250 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+   58,336  ???:__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::uflow() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+   57,380  /build/glibc-SzIz7B/glibc-2.31/libio/libioP.h:fflush
+   55,805  ???:0x00000000048e7130 [???]
+   54,404  /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_sync@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   54,234  ???:0x0000000000126f00 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+   45,255  ???:std::ostream::flush() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+   41,221  ???:0x00000000048e4880 [???]
+   39,920  aleatoria.cpp:main [/home/user/lucamelao/SuperComp/Projeto/aleatoria]
+   27,559  /usr/include/c++/9/bits/move.h:void std::__introsort_loop<__gnu_cxx::__normal_iterator<filme*, std::vector<filme, std::allocator<filme> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<main::{lambda(auto:1&, auto:2&)
+   24,464  /usr/include/c++/9/bits/stl_algo.h:void std::__introsort_loop<__gnu_cxx::__normal_iterator<filme*, std::vector<filme, std::allocator<filme> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<main::{lambda(auto:1&, auto:2&)
+   20,476  /usr/include/c++/9/bits/stl_algo.h:main
+   19,464  ???:std::locale::id::_M_id() const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+   16,714  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   13,692  /usr/include/c++/9/bits/stl_iterator.h:void std::__introsort_loop<__gnu_cxx::__normal_iterator<filme*, std::vector<filme, std::allocator<filme> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<main::{lambda(auto:1&, auto:2&) [/home/user/lucamelao/SuperComp/Projeto/aleatoria]
+   12,720  /build/glibc-SzIz7B/glibc-2.31/elf/dl-tunables.c:__GI___tunables_init [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   12,128  ???:std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+   11,298  /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_xsputn@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   10,212  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:_dl_relocate_object
+   10,033  /build/glibc-SzIz7B/glibc-2.31/elf/../elf/dl-runtime.c:_dl_fixup [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    9,833  /usr/include/c++/9/bits/random.tcc:std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()() [/home/user/lucamelao/SuperComp/Projeto/aleatoria]
+    9,198  /build/glibc-SzIz7B/glibc-2.31/elf/dl-version.c:_dl_check_map_versions [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    9,051  ???:__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::sync() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    8,960  /build/glibc-SzIz7B/glibc-2.31/wcsmbs/btowc.c:btowc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    8,791  /usr/include/c++/9/bits/predefined_ops.h:void std::__introsort_loop<__gnu_cxx::__normal_iterator<filme*, std::vector<filme, std::allocator<filme> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<main::{lambda(auto:1&, auto:2&)
+    8,532  /build/glibc-SzIz7B/glibc-2.31/libio/iofwrite.c:fwrite [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    7,224  ???:std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    6,690  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:do_lookup_x
+    6,365  ???:0x00000000048e44f0 [???]
+    6,045  ???:0x00000000048e7080 [???]
+    6,040  /build/glibc-SzIz7B/glibc-2.31/libio/../sysdeps/unix/sysv/linux/x86/lowlevellock.h:fflush
+    6,039  ???:0x00000000048e5530 [???]
+    6,029  ???:0x00000000048e4f30 [???]
+    6,029  ???:0x00000000048e66a0 [???]
+    6,024  ???:0x000000000010a260 [???]
+    6,024  ???:std::num_get<char, std::istreambuf_iterator<char, std::char_traits<char> > >::do_get(std::istreambuf_iterator<char, std::char_traits<char> >, std::istreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, std::_Ios_Iostate&, long&) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    5,056  /usr/include/c++/9/bits/random.tcc:main
+    5,006  /usr/include/c++/9/bits/vector.tcc:main
+    4,388  ???:std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    4,122  /build/glibc-SzIz7B/glibc-2.31/elf/dl-tunables.h:__GI___tunables_init
+    3,895  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave'2 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    3,633  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    3,328  ???:__dynamic_cast [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    3,186  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    3,062  /build/glibc-SzIz7B/glibc-2.31/elf/dl-misc.c:_dl_name_match_p [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    3,042  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__mempcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    3,000  /usr/include/c++/9/new:main
+    2,960  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    2,898  /build/glibc-SzIz7B/glibc-2.31/libio/libioP.h:fwrite
+    2,816  /build/glibc-SzIz7B/glibc-2.31/wcsmbs/wctob.c:wctob [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    2,733  ???:std::ctype<wchar_t>::_M_initialize_ctype() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    2,707  /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_cache_libcmp [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    2,239  /build/glibc-SzIz7B/glibc-2.31/elf/dl-deps.c:_dl_map_object_deps [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    2,178  ???:std::ostream& std::ostream::_M_insert<long>(long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    2,105  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:_dl_map_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,850  ???:__cxxabiv1::__si_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    1,820  /build/glibc-SzIz7B/glibc-2.31/stdio-common/printf_fp.c:__printf_fp_l [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,642  /build/glibc-SzIz7B/glibc-2.31/libio/fileops.c:_IO_file_overflow@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,608  /build/glibc-SzIz7B/glibc-2.31/elf/get-dynamic-info.h:_dl_map_object_from_fd
+    1,447  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_verify.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,408  /build/glibc-SzIz7B/glibc-2.31/elf/dl-sort-maps.c:_dl_sort_maps [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,338  ???:0x00000000001250d0 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    1,312  /build/glibc-SzIz7B/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,276  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/strlen-avx2.S:__strlen_avx2 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,221  /build/glibc-SzIz7B/glibc-2.31/malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,187  /build/glibc-SzIz7B/glibc-2.31/elf/dl-object.c:_dl_new_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,174  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memcmp-avx2-movbe.S:__memcmp_avx2_movbe [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,124  /build/glibc-SzIz7B/glibc-2.31/elf/dl-load.c:open_path [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,107  /build/glibc-SzIz7B/glibc-2.31/elf/rtld.c:dl_main [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,092  /build/glibc-SzIz7B/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:memset [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,089  /build/glibc-SzIz7B/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,087  ???:std::ctype<char>::_M_widen_init() const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    1,065  /build/glibc-SzIz7B/glibc-2.31/elf/dl-minimal.c:malloc [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,050  ???:0x0000000000124d70 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+
+--------------------------------------------------------------------------------
+-- User-annotated source: aleatoria.cpp
+--------------------------------------------------------------------------------
+Ir     
+
+-- line 40 ----------------------------------------
+     .      int i = 1;
+     .      for (auto& el : contagem){
+     .          cout << "CATEGORIA " << el.first << ": " << el.second << " filmes \n";
+     .          i++;
+     .      }
+     .  }
+     .  
+     .  bool conflito(const filme& f, const vector<filme>& maratona){
+    35      for (const auto& el : maratona){
+    20          if (!((f.inicio >= el.fim) || (f.fim <= el.inicio))){
+     .              return true;
+     .          }
+     .      }
+     .      return false;
+     .  }
+     .  
+     .  void correct_time(vector<filme> filmes){
+ 3,004      for (auto& el : filmes){
+ 3,000          if (el.fim < el.inicio){
+   282              el.fim += 24;
+     .          }
+     .      }
+     .  }
+     .  
+    15  int main(){
+     .  
+     2      auto start_time = std::chrono::high_resolution_clock::now();
+   950  => ???:0x000000000010a210 (1x)
+     .  
+     1      int N = 0; // n de filmes
+     1      int C = 0; // n de categorias
+     .  
+     .      map<int, int> limites;
+     .      vector <filme> filmes, maratona; 
+     .  
+     6      cin >> N >> C;
+ 8,589  => ???:0x000000000010a260 (2x)
+     .  
+     1      filmes.reserve(N);
+     .  
+     .      // Captura o número de filmes para cada categoria
+    22      for (int i = 0; i < C; i++){
+    30          cin >> limites[i+1];
+ 9,980  => ???:0x000000000010a260 (10x)
+     .      }
+     .  
+     .      // print_limits(limites, C);
+     .  
+ 6,007      for (int i = 0; i < N; i++){
+     .          int inicio, fim, categoria;
+10,000          cin >> inicio >> fim >> categoria;
+3,287,654  => ???:0x000000000010a260 (3,000x)
+ 6,000          filmes.push_back({i, inicio, fim, categoria});
+     .      }
+     .  
+     .      // Corrige os filmes que viram noite
+     .      correct_time(filmes);
+     .   
+     .      // ------------------------ Algoritmo Aleatório ------------------------
+     .      
+     .      // Ordena os filmes por hora de fim crescente
+     .      sort(filmes.begin(), filmes.end(), [](auto& i, auto& j){return i.fim < j.fim;}); 
+     .  
+     2      int tempoSemTela = 0;
+     .  
+     .      // Gerador de número aleatório
+     5      random_device rd;
+ 2,830  => /usr/include/c++/9/bits/random.h:std::random_device::random_device() (1x)
+     1      mt19937 gen(rd());
+     .  
+     .      // Distribuição uniforme de números reais entre 0 e 1
+     .      uniform_real_distribution<> dis(0.0, 1.0);
+     .  
+ 4,006      for (int i = 0; i < N; i++){
+     .  
+ 3,147          if (filmes[i].fim <= filmes[i].inicio) {
+     .              continue; // Ignora filmes sem duração ou com duração negativa
+     .          }
+     .  
+ 1,706          if (maratona.empty()){
+     3              maratona.push_back(filmes[i]);
+   267  => /usr/include/c++/9/bits/stl_vector.h:std::vector<filme, std::allocator<filme> >::push_back(filme const&) (1x)
+     3              limites[filmes[i].categoria]--;
+    47  => /usr/include/c++/9/bits/stl_map.h:std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > >::operator[](int const&) (1x)
+     .          }
+     .  
+     .          else{
+     .  
+ 1,725              if ((filmes[i].inicio >= maratona.back().fim) && (limites[filmes[i].categoria] > 0) && !conflito(filmes[i], maratona)){
+   134  => /usr/include/c++/9/bits/stl_map.h:std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > >::operator[](int const&) (3x)
+     .  
+     .  
+     .                  // Caso o filme possa ser incluído, um número aleatório é gerado e comparado com 0.25
+    12                  if (dis(gen) <= 0.25) {
+     .  
+     .                      // Há 25% de entrar nesse bloco e escolher um filme aleatório
+     .                      while (true)
+     .                      {
+     2                          uniform_int_distribution<int> selector(i + 1, N - 1);
+     .                          int j = selector(gen);
+     9                          if ((filmes[j].inicio >= maratona.back().fim) && (limites[filmes[j].categoria] > 0) && !conflito(filmes[j], maratona)){
+     2                              tempoSemTela += filmes[j].inicio - maratona.back().fim;
+     3                              maratona.push_back(filmes[j]);
+   383  => /usr/include/c++/9/bits/stl_vector.h:std::vector<filme, std::allocator<filme> >::push_back(filme const&) (1x)
+     3                              limites[filmes[j].categoria]--;
+    47  => /usr/include/c++/9/bits/stl_map.h:std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > >::operator[](int const&) (1x)
+     3                              break;
+     .                          }
+     .  
+     .                      }
+     .  
+     .                  } else {
+     .                      // Há 75% de entrar nesse bloco
+    10                      tempoSemTela += filmes[i].inicio - maratona.back().fim;
+     6                      maratona.push_back(filmes[i]);
+   394  => /usr/include/c++/9/bits/stl_vector.h:std::vector<filme, std::allocator<filme> >::push_back(filme const&) (2x)
+    23                      limites[filmes[i].categoria]--;
+    91  => /usr/include/c++/9/bits/stl_map.h:std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > >::operator[](int const&) (2x)
+     .                  }
+     .              }
+     .          }
+     .      }
+     .  
+     1      if (maratona.back().fim < 24){
+     7          tempoSemTela += 24 - maratona.back().fim;
+     .      }
+     .  
+     1      auto end_time = std::chrono::high_resolution_clock::now();
+    40  => ???:0x000000000010a210 (1x)
+     .      auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time);
+     4      double time_taken = duration.count()/1000.0;
+     .  
+     .      // Output visual
+     2      cout << "\nAGENDA DE FILMES (" << maratona.size() << ")\n";
+ 1,678  => ???:0x000000000010a2d0 (1x)
+     .      cout << "-----------------------------------------------------------------------------------\n";
+     .      cout << "  HORAS |";
+    76      for (int h = 0; h < 25; ++h) {
+    77          cout << setw(3) << h;
+19,088  => ???:0x000000000010a3a0 (25x)
+     .      }
+     .      cout << "\n-----------------------------------------------------------------------------------\n";
+     .  
+    16      for (const auto &filme : maratona) {
+    16          cout << "  FILM " << setw(2) << filme.id << " |";
+ 1,776  => ???:0x000000000010a3a0 (4x)
+   296          for (int h = 0; h < 24; ++h) {
+   262              if (h >= filme.inicio && h < filme.fim) {
+     .                  cout << "###";
+     .              } else {
+     .                  cout << "   ";
+     .              }
+     .          }
+    16          cout << " | CAT:" << filme.categoria << "\n";
+ 1,620  => ???:0x000000000010a3a0 (4x)
+     .      }
+     .  
+     .      cout << "-----------------------------------------------------------------------------------";
+     .  
+     .      // check_categories(maratona);
+     .  
+     .      int totalDeFilmes = maratona.size();
+     2      int tempoDeTela = 24 - tempoSemTela;
+     .  
+     2      cout << "\nFilmes assistidos: " << maratona.size() << "\n";
+   434  => ???:0x000000000010a2d0 (1x)
+     4      cout << "Tempo de tela: " << tempoDeTela << " horas."<< endl;
+   405  => ???:0x000000000010a3a0 (1x)
+     .      std::cout << "Execution time: " << time_taken << " ms." << std::endl;
+     .  
+     5      ofstream myfile;
+ 6,410  => ???:0x000000000010a390 (1x)
+ 3,440  => ???:0x000000000010a340 (1x)
+     4      myfile.open ("aleatoria_output.txt", ios::app);
+ 7,580  => ???:0x000000000010a200 (1x)
+    18      myfile << N << " " << C << " " << time_taken << " " << tempoDeTela << " " << totalDeFilmes << "\n";
+ 2,579  => ???:0x000000000010a3a0 (4x)
+   223  => ???:0x000000000010a2d0 (1x)
+     2      myfile.close();
+10,705  => ???:0x000000000010a330 (1x)
+     .  
+     .      return 0;
+    15  }
+--------------------------------------------------------------------------------
+Ir     
+--------------------------------------------------------------------------------
+39,923  events annotated
